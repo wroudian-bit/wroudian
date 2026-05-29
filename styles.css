@@ -324,6 +324,7 @@ img {
   display: grid;
   justify-items: center;
   padding-block: clamp(44px, 7vw, 92px);
+  text-align: center;
   gap: 0;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -331,7 +332,8 @@ img {
 
 .manifesto p {
   margin: 0;
-  max-width: 1080px;
+  width: 100%;
+  max-width: none;
   text-align: center;
   font-family: Inter, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: clamp(32px, 5.5vw, 88px);
