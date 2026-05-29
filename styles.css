@@ -322,7 +322,8 @@ img {
 
 .manifesto {
   display: grid;
-  gap: 20px;
+  padding-block: clamp(44px, 7vw, 92px);
+  gap: 0;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -330,11 +331,11 @@ img {
 .manifesto p {
   margin: 0;
   max-width: 1080px;
-  font-family: "Bodoni 72", Didot, "Baskerville", "Times New Roman", serif;
-  font-size: clamp(42px, 6vw, 104px);
-  font-style: italic;
-  font-weight: 600;
-  line-height: 0.9;
+  font-family: Inter, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: clamp(32px, 5.5vw, 88px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
   letter-spacing: 0;
   color: #000000;
 }
