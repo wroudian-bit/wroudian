@@ -216,11 +216,12 @@ img {
   margin: 0;
   max-width: 10ch;
   font-family: "Songti SC", "Noto Serif SC", "STSong", "SimSun", serif;
-  font-size: clamp(64px, 7.8vw, 132px);
-  line-height: 0.92;
+  font-size: clamp(58px, 6.8vw, 112px);
+  line-height: 1.04;
   letter-spacing: 0;
+  color: rgba(17, 17, 17, 0.72);
   text-wrap: balance;
-  text-shadow: 0 2px 28px rgba(255, 255, 255, 0.72);
+  text-shadow: 0 2px 24px rgba(255, 255, 255, 0.66);
 }
 
 .hero-title-art span {
@@ -232,29 +233,27 @@ img {
 
 .hero-title-art span + span {
   margin-left: auto;
-  margin-top: -0.08em;
+  margin-top: 0.04em;
 }
 
+.hero-title-art span::before,
 .hero-title-art span::after {
   content: "";
   position: absolute;
-  left: calc(100% + 18px);
   top: 55%;
-  width: clamp(36px, 7vw, 112px);
   height: 1px;
   background: currentColor;
   opacity: 0.42;
 }
 
-.hero-title-art span:first-child::before {
-  content: "";
-  position: absolute;
+.hero-title-art span::before {
   right: calc(100% + 18px);
-  top: 55%;
   width: clamp(42px, 8vw, 128px);
-  height: 1px;
-  background: currentColor;
-  opacity: 0.42;
+}
+
+.hero-title-art span::after {
+  left: calc(100% + 18px);
+  width: clamp(36px, 7vw, 112px);
 }
 
 .hero-meta {
@@ -678,8 +677,9 @@ img {
   }
 
   .hero h1 {
-    font-size: clamp(42px, 13vw, 76px);
-    max-width: 9ch;
+    font-size: clamp(38px, 11vw, 62px);
+    max-width: 10ch;
+    line-height: 1.08;
   }
 
   .eyebrow {
@@ -688,16 +688,20 @@ img {
 
   .hero-title-art span + span {
     margin-left: auto;
+    margin-top: 0.08em;
+  }
+
+  .hero-title-art span::before,
+  .hero-title-art span::after {
+    width: clamp(22px, 9vw, 48px);
+  }
+
+  .hero-title-art span::before {
+    right: calc(100% + 10px);
   }
 
   .hero-title-art span::after {
-    width: clamp(22px, 9vw, 48px);
     left: calc(100% + 10px);
-  }
-
-  .hero-title-art span:first-child::before {
-    width: clamp(22px, 9vw, 48px);
-    right: calc(100% + 10px);
   }
 
   .hero-meta {
