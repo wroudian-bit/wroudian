@@ -1,0 +1,10 @@
+.deploy-stage/
+.netlify-mcp-manual/
+images/
+images2/
+images3/
+netlify.toml
+*.zip
+*.log
+server.err.log
+server.out.log
