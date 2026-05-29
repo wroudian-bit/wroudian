@@ -214,9 +214,9 @@ img {
 
 .hero h1 {
   margin: 0;
-  max-width: 10ch;
-  font-family: "Songti SC", "Noto Serif SC", "STSong", "SimSun", serif;
-  font-size: clamp(58px, 6.8vw, 112px);
+  max-width: 15ch;
+  font-family: "Bodoni 72", Didot, "Baskerville", "Times New Roman", serif;
+  font-size: clamp(56px, 6.2vw, 104px);
   line-height: 1.04;
   letter-spacing: 0;
   color: rgba(17, 17, 17, 0.72);
@@ -677,8 +677,8 @@ img {
   }
 
   .hero h1 {
-    font-size: clamp(38px, 11vw, 62px);
-    max-width: 10ch;
+    font-size: clamp(36px, 10vw, 58px);
+    max-width: 12ch;
     line-height: 1.08;
   }
 
